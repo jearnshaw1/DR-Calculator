@@ -159,7 +159,6 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Documents\NetBeansProjects\DynamicRange\main.cpp" />
     <ClCompile Include="..\..\..\..\Documents\NetBeansProjects\DynamicRange\WaveLoader.cpp" />
-    <ClCompile Include="DR Calculator.cpp" />
     <ClCompile Include="ImpulseGen.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -1,3 +1,4 @@
+
 // DR Calculator.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
@@ -13,3 +14,38 @@
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+
+#include "windows.h"
+#include  <cstdio>
+#include "WaveLoader.h"
+
+int main(int argc, char* argv[])
+{
+	if (argc == 1) 
+	{
+
+		printf("The path to a wave file was not specified\n");
+
+		return 1;
+
+	}
+
+	else if (argc > 2) 
+	{
+
+		printf("Too many arguments supplied.\n");
+
+		return 1;
+
+	}
+
+
+
+	waveloader waveloader1(argv[0]);
+
+	R128(waveloader1&);
+
+	return 0;
+}
+

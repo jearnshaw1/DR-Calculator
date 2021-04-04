@@ -1,4 +1,13 @@
-#pragma once
+#ifndef IMPULSEGEN_H
+#define IMPULSEGEN_H
 
-double sinc(double, int);
-void generator(const char *, double(*func)(double, int));
+namespace ImpulseGen
+{
+
+
+	double sinc(double, int);
+	void generator(const char *, double(*func)(double, int));
+
+} 
+
+#endif //IMPULSEGEN_H
