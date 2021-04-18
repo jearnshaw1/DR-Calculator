@@ -42,9 +42,9 @@ int main(int argc, char* argv[])
 
 
 
-	waveloader waveloader1(argv[0]);
+	WaveLoader waveloader1(argv[0]);
 
-	R128(waveloader1&);
+	//R128(waveloader1&);
 
 	return 0;
 }

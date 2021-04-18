@@ -151,14 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Documents\NetBeansProjects\DynamicRange\LoudnessFunctions.h" />
-    <ClInclude Include="..\..\..\..\Documents\NetBeansProjects\DynamicRange\WaveLoader.h" />
+    <ClInclude Include="Loudness.h" />
+    <ClInclude Include="WaveLoader.h" />
     <ClInclude Include="ImpulseGen.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Documents\NetBeansProjects\DynamicRange\main.cpp" />
-    <ClCompile Include="..\..\..\..\Documents\NetBeansProjects\DynamicRange\WaveLoader.cpp" />
+    <ClCompile Include="Loudness.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="WaveLoader.cpp" />
     <ClCompile Include="ImpulseGen.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
