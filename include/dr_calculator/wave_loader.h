@@ -1,13 +1,13 @@
 #ifndef WAVELOADER_H
-namespace WaveLoader
-{
 
-	class WaveLoader
+namespace dr_calculator
+{
+	class wave_loader
 	{
 	public:
-		WaveLoader(const char* fileName);
+		wave_loader(const char* fileName);
 
-		~WaveLoader();
+		~wave_loader();
 		char* data{ nullptr };
 		char* samples{ nullptr };
 		int bitsPerSample{ 0 };
@@ -15,7 +15,7 @@ namespace WaveLoader
 		int numSamples;
 
 	};
-
 }
+
 #define WAVELOADER_H
 #endif // WAVELOADER_H

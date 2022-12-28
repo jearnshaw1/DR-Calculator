@@ -1,15 +1,15 @@
-#include "WaveLoader.h"
+#include "dr_calculator/wave_loader.h"
 #include <fstream>
 #include <istream>
 #include <exception>
 #include <iostream>
 
-namespace WaveLoader
+namespace dr_calculator
 {
-	struct WaveLoadErr : public std::exception
+	struct wave_load_err : public std::exception
 	{};
 
-	WaveLoader::WaveLoader(const char* fileName)
+	wave_loader::wave_loader(const char* fileName)
 	{
 		//std::ifstream fileObject( fileName, std::ios_base::in );
 
@@ -17,7 +17,7 @@ namespace WaveLoader
 		fileObject.open("Lonely_Love_MASTER_4832.wav");
 
 		if (fileObject.fail() || !fileObject.is_open())
-			throw WaveLoadErr();
+			throw wave_load_err();
 
 		// read file header according to sox convention
 
@@ -57,7 +57,7 @@ namespace WaveLoader
 		numSamples = numberSampleBytes / (2 * bitsPerSample);
 	}
 
-	WaveLoader::~WaveLoader()
+	wave_loader::~wave_loader()
 	{
 		delete[] data;
 		delete[] samples;

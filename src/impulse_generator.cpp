@@ -1,4 +1,4 @@
-#include "ImpulseGen.h"
+#include "dr_calculator/impulse_generator.h"
 #include <algorithm>
 #include <cmath>
 #include <fstream>
